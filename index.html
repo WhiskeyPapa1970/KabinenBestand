@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabinen Bestand</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Kabinen Bestand</h1>
+    </div>
+
+    <div class="hauptbereich">
+
+    <div class="links">
+
+        <div class="top-bereich">
+
+            <div class="karte dashboard">
+
+                <h2>Neue Bestandsmeldung</h2>
+
+                <select id="standort">
+                    <option value="">Standort wählen</option>
+                    <option value="liesing">Liesing</option>
+                    <option value="raasdorf">Raasdorf</option>
+                    <option value="wels">Wels</option>
+                    <option value="spittal">Spittal</option>
+                    <option value="graz">Graz</option>
+                    <option value="hall">Hall</option>
+                </select>
+
+                <select id="kw">
+                    <option value="">KW wählen</option>
+                </select>
+
+                <select id="typ">
+                    <option value="">Typ wählen</option>
+                </select>
+
+                <input
+                    type="number"
+                    id="anzahl"
+                    placeholder="Anzahl">
+
+                <button id="saveBtn">
+                    Bestand speichern
+                </button>
+
+            </div>
+
+            <div class="karte">
+
+              <h2 id="standortTitel">
+    Standortbestand
+</h2>
+
+<select id="anzeigeKW">
+    <option value="">KW wählen</option>
+</select>
+
+<div id="standortBestandContainer"></div>
+
+            </div>
+
+        </div>
+
+        <div class="karte">
+
+            <h2>Standort auswählen</h2>
+
+            <div class="standort-buttons">
+
+                <button class="standort-btn" data-standort="liesing">Liesing</button>
+                <button class="standort-btn" data-standort="raasdorf">Raasdorf</button>
+                <button class="standort-btn" data-standort="wels">Wels</button>
+                <button class="standort-btn" data-standort="graz">Graz</button>
+                <button class="standort-btn" data-standort="spittal">Spittal</button>
+                <button class="standort-btn" data-standort="hall">Hall</button>
+
+            </div>
+
+        </div>
+
+        <div class="karte map">
+
+            <h2>Österreichkarte</h2>
+
+            <object
+                id="austriaMap"
+                data="Austria_States_blank_map.svg"
+                type="image/svg+xml">
+            </object>
+
+        </div>
+
+    </div>
+
+    <div class="rechts">
+
+        <div class="karte">
+
+            <h2>Gesamtbestand</h2>
+
+            <div id="gesamtBestandContainer"></div>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+ <script src="script.js"></script>
+
+</body>
+</html>
