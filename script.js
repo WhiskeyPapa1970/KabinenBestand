@@ -1,10 +1,10 @@
 alert("script geladen");
 console.log("script gestartet");
 const supabaseUrl =
-    "https://jpmfhyectqzaxupbgche.supabase.co";
+    "https://wosxlwsnkssergfvbzla.supabase.co/rest/v1/";
 
 const supabaseKey =
-    "sb_publishable_9vZDzjnLAJJbir0wVO_nhw_7rqtLDXg";
+    "sb_publishable_6tO_oqxyRqx241aeypFqTw_JArFTo3-";
 
 const supabaseClient =
     window.supabase.createClient(
