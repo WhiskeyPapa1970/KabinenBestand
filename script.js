@@ -15,7 +15,7 @@ const supabaseClient =
 
     const { data, error } =
         await supabaseClient
-            .from("bestand")
+            .from("KabinenBestand")
             .select("*");
 
     console.log("DATA:", data);
@@ -27,7 +27,7 @@ async function loadBestaende() {
 
     const { data, error } =
         await supabaseClient
-            .from("bestand")
+            .from("KabinenBestand")
             .select("*");
 console.log("ROH:", data);
     if (error) {
@@ -154,13 +154,13 @@ loadBestaende();
 
         bestaende.forEach(e => {
 
-            gesamt[e.typ] += e.anzahl;
+            gesamt[e.kabinentyp] += e.bestand;
 
             if (
                 e.standort === aktuellerStandort &&
                 e.kw == anzeigeKW.value
             ) {
-                standort[e.typ] += e.anzahl;
+                standort[e.kabinentyp] += e.bestand;
             }
 
         });
@@ -209,7 +209,7 @@ saveBtn.addEventListener("click", async () => {
 console.log("SENDE AN SUPABASE", datensatz);
 const { data, error } =
     await supabaseClient
-        .from("bestand")
+        .from("KabinenBestand")
         .upsert(
             [datensatz],
             {
