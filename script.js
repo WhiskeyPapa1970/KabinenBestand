@@ -432,7 +432,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                 );
 
                             }
-                            }
+                            
 
                             aktualisiereAnzeige();
 
