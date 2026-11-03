@@ -432,21 +432,22 @@ document.addEventListener("DOMContentLoaded", () => {
                                 );
 
                             }
+                            }
 
-  
-});
+                            aktualisiereAnzeige();
 
-                        }
-                    );
+                        });
 
-                }
-            );
+                    });
 
             resetMap();
 
-        }
-    );
+        });
 
     loadBestaende();
 
 });
+  
+
+
+
