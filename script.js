@@ -324,12 +324,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     anzeigeKW.addEventListener(
         "change",
-        () => {
-
-            aktualisiereAnzeige();
-
-        }
-    );
+        () => { });
 
     // SVG
 
@@ -438,7 +433,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
                             }
 
-                            aktualisiereAnzeige();
+                          loadBestaende().then(() => {
+    aktualisiereAnzeige();
+});
 
                         }
                     );
