@@ -52,7 +52,7 @@ async function loadBestaende() {
         bestaende
     );
 
-    aktualisiereAnzeige();
+
 
 }
 
@@ -433,8 +433,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                             }
 
-                          loadBestaende().then(() => {
-    aktualisiereAnzeige();
+  
 });
 
                         }
