@@ -312,6 +312,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             await loadBestaende();
+            aktualisiereAnzeige();
 
             alert(
                 "Datensatz gespeichert"
