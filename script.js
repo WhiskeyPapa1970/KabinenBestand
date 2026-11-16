@@ -154,10 +154,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function aktualisiereAnzeige() {
 console.log(
-    "ANZEIGE",
-    "Standort:",
+    "FILTER:",
     aktuellerStandort,
-    "KW:",
     anzeigeKW.value
 );
         const gesamtContainer =
@@ -198,7 +196,12 @@ console.log(
                 ] += e.bestand;
 
             }
-
+console.log(
+    e.standort,
+    e.kw,
+    aktuellerStandort,
+    anzeigeKW.value
+);
             if (
                 e.standort ===
                     aktuellerStandort &&
