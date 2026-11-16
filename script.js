@@ -202,6 +202,16 @@ console.log(
     aktuellerStandort,
     anzeigeKW.value
 );
+      if (
+    e.standort === "hall" &&
+    e.kw == 47 &&
+    e.kabinentyp === "Toi Fresh"
+) {
+    console.log(
+        "GEFUNDEN:",
+        e
+    );
+}      
             if (
                 e.standort ===
                     aktuellerStandort &&
