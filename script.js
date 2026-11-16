@@ -201,17 +201,7 @@ console.log(
     e.kw,
     aktuellerStandort,
     anzeigeKW.value
-);
-      if (
-    e.standort === "hall" &&
-    e.kw == 47 &&
-    e.kabinentyp === "Toi Fresh"
-) {
-    console.log(
-        "GEFUNDEN:",
-        e
-    );
-}      
+);  
             if (
                 e.standort ===
                     aktuellerStandort &&
@@ -347,7 +337,7 @@ console.log(
 
     anzeigeKW.addEventListener(
         "change",
-        () => { });
+        () => {aktualisiereAnzeige(); });
 
     // SVG
 
@@ -467,10 +457,9 @@ console.log(
 
         });
 
-    loadBestaende();
-
+loadBestaende().then(() => {
+    aktualisiereAnzeige();
 });
-  
 
 
 
