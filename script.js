@@ -153,7 +153,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     function aktualisiereAnzeige() {
-
+console.log(
+    "ANZEIGE",
+    "Standort:",
+    aktuellerStandort,
+    "KW:",
+    anzeigeKW.value
+);
         const gesamtContainer =
             document.getElementById(
                 "gesamtBestandContainer"
@@ -169,7 +175,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const gesamt = {};
         const standort = {};
-
+console.log(
+    "BESTAENDE AKTUELL:",
+    bestaende
+);
         kabinentypen.forEach(typ => {
 
             gesamt[typ] = 0;
