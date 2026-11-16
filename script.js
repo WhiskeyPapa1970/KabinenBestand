@@ -460,6 +460,6 @@ console.log(
 loadBestaende().then(() => {
     aktualisiereAnzeige();
 });
-
+});
 
 
